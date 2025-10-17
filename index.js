@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
   res.send("Hello from Express on Azure!");
 });
 
+app.get("/new", (req, res) => {
+  res.send("Hello from Express on Azure! this is another endpoint");
+});
+
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
